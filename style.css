@@ -51,3 +51,83 @@
     box-sizing: content-box;
  }
 
+/* selector_practice_start */
+
+/* universal Selector */
+
+
+*{
+    color: black;
+}
+
+/* grouping-selector */
+
+ul,li,a{
+    color: black;
+    text-decoration: none;
+}
+
+#selector .selector_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+#selector .selector_wrapper_bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+#selector .first p:first-of-type{
+    color: red;
+    font-size: 1.5 rem;
+}
+
+#selector article a:nth-child(3):hover{
+    color:burlywood;
+}
+#selector article:nth-child(3) h4::selection{
+   color: white; 
+   background-color: black;
+}
+/*  arrtibute selector */
+
+a[href="ferdous"]{
+    color: red;
+}
+
+/* descendant-selector*/
+.combinator-descendant p{
+    color: goldenrod;
+}
+
+/* child-selector */
+.combinator-child-selector > p{
+    color:blue;
+}
+
+.selector_wrapper_bottom div + p{
+    background: orange;
+    color: blue;
+}
+.selector_wrapper_bottom article:nth-child(2) div ~ p{
+    background: orange;
+    color: blue;
+}
+
+.pseudo-class{
+    width: 300px;
+}
+.pseudo-class a{
+    padding-left: 90px;
+}
+.pseudo-class a:link{
+    color: green;
+}
+.pseudo-class a:visited{
+    color: green;
+}
+.pseudo-class a:hover{
+    color: red;
+}
+.pseudo-class a:active{
+    color: yellow;
+}
