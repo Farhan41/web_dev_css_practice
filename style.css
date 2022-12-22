@@ -1,0 +1,53 @@
+/* box-model */
+
+/* box-model Intrinsic sizing
+ & Extrinsic sizing */
+
+ #box-model{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ }
+
+/* Here I used Child Selector > */
+
+#box-model > p{
+    width: 200px;
+    /* height: 100px; */
+    padding: 20px;
+    border: 1px solid;
+}
+
+#box-model > p{
+    /* width: max-content; */
+    width: min-content;
+    /* height: min-content; */
+} 
+
+#box-model .card-min-content{
+   width: 200px;
+   background-color: chocolate;
+   padding: 20px;
+}
+
+#box-model .card-min-content{
+    width: min-content;
+}
+
+#box-model .card-max-content{
+    width: 200px;
+    background-color: chocolate;
+    padding: 20px;
+ }
+ 
+ #box-model .card-max-content{
+     width: max-content;
+ }
+ #box-model .border-box{
+    border: 1px solid;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    box-sizing: content-box;
+ }
+
